@@ -1,0 +1,47 @@
+{
+    "slackChannel": "deployments",
+    "type": "task|service",
+    "language": "node|python|etc",
+    "KDD": {
+        "application": "repo-name-here",
+        "cluster": "cluster name here (mgmt|data|ots|gpu-ecs)",
+        "ENV": "dev",
+        "roleName": "repo-name-here" ,
+        "region": "us-east-2",
+        "environmentVariables": [
+            "ENV_KEY=ENV_VALUE"
+        ],
+        "buildArguments": [
+            "buildArgKey=buildArgValue"
+        ],
+        "port": 3000,
+        "cpu": 10,
+        "memory": 128,
+        "desiredCount": 2,
+        "s3Secrets": [
+            "REPO-NAME-HERE/secret-file-name"
+        ]
+    },
+    "KDP": {
+        "application": "repo-name-here",
+        "cluster": "cluster name here (mgmt|data|ots|gpu-ecs)",
+        "ENV": "prd",
+        "roleName": "repo-name-here" ,
+        "region": "us-east-2",
+        "environmentVariables": [
+            "ENV_KEY=ENV_VALUE"
+        ],
+        "buildArguments": [
+            "buildArgKey=buildArgValue"
+        ],
+        "port": 3000,
+        "cpu": 10,
+        "memory": 128,
+        "desiredCount": 2,
+        "s3Secrets": [
+            "REPO-NAME-HERE/secret-file-name"
+        ]
+    }
+	}
+}
+
